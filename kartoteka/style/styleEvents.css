@@ -1,0 +1,476 @@
+body,
+html,
+main {
+    width: 100%;
+    height: auto;
+}
+
+a,
+p,
+h2,
+h3,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-menu: #1F2339;
+    --background-main: #4D5474;
+    --background-card: #383E57;
+    --textWhite: #fff;
+    --textGrey: #A1A6BE;
+    --textBlue: #43E8FF;
+    --textRed: #FF8991;
+    --textCard: #A1A6BE;
+    --borderTable: #151E41;
+    --fornBackground: #3E4459;
+    --textForm: #C4C4C4;
+}
+
+.container {
+    width: 1080px;
+    margin-left: 38px;
+    margin-right: 79px;
+}
+
+
+/*====================================================EVENTS-TITLE====================================================*/
+
+.events__title-container {
+    margin-top: 69px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-container__left {
+    display: flex;
+}
+
+.events__title-container-right {
+    display: flex;
+    margin-top: -4px;
+}
+
+.title-container-left__title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--textWhite)
+}
+
+.title-container-left__link {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--textWhite);
+    margin-left: 18px;
+    margin-top: -3px;
+}
+
+.title-container-left__link:hover {
+    color: var(--textBlue);
+}
+
+.title-container-right__button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 21px;
+    width: 240px;
+    height: 34px;
+    margin-top: 2px;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+}
+
+.title-container-right__button:active {
+    transform: translateY(3px) translateX(3px);
+}
+
+
+/*====================================================EVENTS-TITLE====================================================*/
+
+
+/*====================================================EVENTS-ACCORDION====================================================*/
+
+.ui-accordion-header-icon {
+    display: none;
+}
+
+.events-content__container {
+    margin-top: 45px;
+    display: flex;
+}
+
+.events-content__accordion {
+    margin-right: 30px;
+    width: 48.5%;
+}
+
+.accordion-title {
+    color: var(--textWhite);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 25px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.accordion-title:hover svg {
+    transition: all 0.5s ease;
+    transform: rotate(180deg);
+}
+
+.title__arrow {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.title__discription {
+    color: var(--textRed);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.accordion__director,
+.accordion__contract,
+.accordion__location,
+.accordion__people,
+.accordion__rorganisation-name,
+.accordion__reorganisation-title {
+    color: var(--textWhite);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.accordion__contract {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.accordion__reorganisation-title {
+    font-weight: 700;
+}
+
+.accordion__rorganisation-name {
+    color: var(--textGrey);
+}
+
+.accordion__director {
+    padding-top: 20px;
+    padding-bottom: 3px;
+}
+
+.accordion__contract {
+    padding-bottom: 26px;
+}
+
+.accordion__location {
+    padding-bottom: 10px;
+}
+
+.ui-accordion {
+    background: var(--background-card);
+    border-radius: 18px;
+    padding-bottom: 25px;
+}
+
+.ui-accordion-content {
+    background: var(--background-card);
+    height: auto!important;
+    border-bottom: 1px solid var(--borderTable);
+    padding-bottom: 25px;
+}
+
+.ui-accordion-content:last-child {
+    border: none;
+}
+
+.accordion__container {
+    background: var(--background-card);
+    border-radius: 18px;
+}
+
+.container__title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--textWhite);
+    padding-left: 20px;
+    padding-top: 27px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--borderTable);
+    width: 100%;
+}
+
+
+/*====================================================EVENTS-ACCORDION====================================================*/
+
+
+/*====================================================EVENTS-CHECK====================================================*/
+
+.container__check {
+    width: 48.5%;
+}
+
+.check__content {
+    background: var(--background-card);
+    border-radius: 18px;
+    padding-left: 26px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.item-check__lable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--textWhite);
+    white-space: nowrap;
+}
+
+.item-check__input {
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--textWhite);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -8px;
+}
+
+.list__item-check {
+    margin-bottom: 14px;
+    display: flex;
+}
+
+.list__item-check:last-child {
+    margin-bottom: 0;
+}
+
+.item-check__button {
+    background: #23273A;
+    padding: 5.5px 31px;
+    border-radius: 6px;
+    border: none;
+    color: var(--textWhite);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.item-check__button:hover {
+    color: var(--textBlue);
+}
+
+.item-check__button:active {
+    transform: translateY(3px) translateX(3px);
+}
+
+
+/*====================================================EVENTS-CHECK====================================================*/
+
+
+/*====================================================EVENTS-FORM====================================================*/
+
+.check__form {
+    margin-top: 25px;
+    border-radius: 18px;
+    background: var(--background-card);
+}
+
+.top__label {
+    display: flex;
+    flex-direction: column;
+}
+
+.down__label {
+    display: flex;
+    flex-direction: column;
+}
+
+.top__label,
+.down__label,
+.down__title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--textWhite);
+}
+
+.container__top {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--borderTable);
+    padding-left: 29px;
+    padding-right: 30px;
+    padding-top: 25px;
+}
+
+.label__area {
+    margin-top: 5px;
+    border-radius: 5px;
+    background: var(--fornBackground);
+    border: none;
+    color: var(--textForm);
+    padding: 10px 8px;
+    height: 56px;
+    resize: none;
+}
+
+.container__down {
+    padding-left: 29px;
+    padding-right: 30px;
+    padding-top: 27px;
+    padding-bottom: 25px;
+}
+
+.label__organisation,
+.label__date,
+.label__place {
+    margin-top: 8px;
+    padding-top: 7px;
+    padding-left: 11px;
+    padding-bottom: 7px;
+    background: var(--fornBackground);
+    border: none;
+    border-radius: 5px;
+}
+
+.label__date {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.down__select-view {
+    margin-top: 17px;
+}
+
+.down__title {
+    margin-bottom: 5px;
+}
+
+.down__select-view,
+.down__select-form {
+    margin-bottom: 16px;
+}
+
+.down__select-metod {
+    margin-bottom: 14px;
+}
+
+.select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 304px;
+    height: 34px;
+    background: var(--fornBackground);
+    border-radius: 5px;
+    color: var(--textForm);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.select-arrow {
+    position: relative;
+}
+
+.select-arrow::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url('../img/events/arrowSelect.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 56%;
+    left: 274px;
+    transform: translateY(-50%);
+    display: inline-block;
+    pointer-events: none;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__down {
+    display: flex;
+    flex-direction: column;
+}
+
+.down__button {
+    align-self: center;
+    background: #23273A;
+    border: none;
+    color: var(--textWhite);
+    border-radius: 5px;
+    margin-top: 19px;
+    padding: 8px 32px;
+}
+
+.down__button:hover {
+    color: var(--textBlue);
+}
+
+.down__button:active {
+    transform: translateY(3px) translateX(3px);
+}
+
+
+/*====================================================EVENTS-FORM====================================================*/
